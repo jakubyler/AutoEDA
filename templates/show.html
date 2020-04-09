@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}AutoEDA | Show{% endblock %}
+{% block body %}
+<h1 style = "margin-left: 50px">Here are Your <b>AutoEDA</b> datasets:</h1>
+
+{% for table in tables %}
+  {{ table|safe }}
+{% endfor %}
+
+<a href="/"><buttonRet style = "margin-left: 50px">Return to Home Page</buttonRet></a>
+{% endblock %}
